@@ -1,4 +1,3 @@
-import { onAuthStateChanged } from "firebase/auth";
 import Chat from "./components/chat/Chat";
 import Detail from "./components/detail/Detail";
 import List from "./components/list/List";
@@ -6,17 +5,7 @@ import Notifications from "./components/notifications/notifications";
 
 const App = () => {
 
-const user = false;
-
-useEffect(()=>{
-  const unSub = onAuthStateChanged(auth,(user)=>{
-    console.log(user);
-  });
-
-  return () => {
-    unSub();
-  };
-},[]);
+const user = true
 
   return (
     <div className='container'>
