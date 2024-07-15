@@ -72,11 +72,11 @@ const ChatList = () => {
         <div className='chatList'>
             <div className="search">
                 <div className="searchBar">
-                    <img src="./search.png" alt="" />
+                    <img src="https://i.pinimg.com/236x/79/ce/10/79ce10e4c34077215b988139aec41dbe.jpg" alt="" />
                     <input type="text" placeholder="Search" onChange={(e)=>setInput(e.target.value)}/>
                 </div>
                 <img 
-                  src={addMode ? "./minus.png" : "./plus.png"} 
+                  src={addMode ? "https://i.pinimg.com/564x/ef/62/4e/ef624e5d1f05df24926783de7ee477bf.jpg" : "https://i.pinimg.com/236x/ac/98/55/ac98554a4cd24ac2a97a76e07bb2bc26.jpg"} 
                   alt="" 
                   className="add"
                   onClick={() => setAddMode((prev) => !prev)}
@@ -88,7 +88,7 @@ const ChatList = () => {
                 backgroundColor: chat?.isSeen ? "transparent" : "#5183fe",
               }}
               >
-                <img src={chat.user.blocked.includes(currentUser.id) ? "./avatar.png" : chat.user.avatar || "./avatar.png"} alt="" />
+                <img src={chat.user.blocked.includes(currentUser.id) ? "https://i.pinimg.com/236x/59/a2/7f/59a27ff804863f64634360cd3c769e40.jpg" : chat.user.avatar || "https://i.pinimg.com/236x/59/a2/7f/59a27ff804863f64634360cd3c769e40.jpg"} alt="" />
                 <div className="texts">
                     <span>{chat.user.blocked.includes(currentUser.id) ? "User" : chat.user.username}</span>
                     <p>{chat.lastMessage}</p>
