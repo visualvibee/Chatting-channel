@@ -1,0 +1,28 @@
+.userinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius:50%;
+  }
+  
+  .icons img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    cursor:pointer;
+    background-color: transparent;
+  }
+  
