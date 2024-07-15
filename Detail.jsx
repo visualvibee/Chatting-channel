@@ -26,8 +26,8 @@ const Detail = () => {
     return (
         <div className='detail'>
             <div className="user">
-                <img src={user?.avatar || "./avatar.png"} alt="" />
-                <h2>{user?.username || "./avatar.png"}</h2>
+                <img src={user?.avatar || "https://i.pinimg.com/236x/59/a2/7f/59a27ff804863f64634360cd3c769e40.jpg"} alt="" />
+                <h2>{user?.username || "https://i.pinimg.com/236x/59/a2/7f/59a27ff804863f64634360cd3c769e40.jpg"}</h2>
                 <p>howdy guys</p>
             </div>
             <div className="info">
